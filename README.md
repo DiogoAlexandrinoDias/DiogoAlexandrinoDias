@@ -1,37 +1,11 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
+**OLá !!! Eu sou Diogo 👦🏽👋🏽**
 
-# Configurar o navegador
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')  # Executar em modo headless (sem interface gráfica)
-options.add_argument('--disable-blink-features=AutomationControlled')
-options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+[](https://camo.githubusercontent.com/a2656fe776f296261f79748adff3a1191150ee506b373357ee30a22502362f6e/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d44696f676f416c6578616e6472696e6f446961732673686f775f69636f6e733d74727565267468656d653d64726163756c61)
 
-driver = webdriver.Chrome(options=options)
+**Estou em busca da minha primeira experiência na área de Análise e Desenvolvimento de Sistemas (ADS) em T.I. Atualmente, estou no início do meu curso na USJT e estou muito motivado para aprender e aplicar meus conhecimentos em um ambiente profissional. Sou aberto a aprendizados e desafios. Se você tiver alguma oportunidade ou puder me indicar, ficaria muito agradecido!**
 
-# Acessar a URL
-url = 'https://www.webmotors.com.br/carros/sp-cotia/volkswagen/golf?tipoveiculo=carros&localizacao=-23.6026684%2C-46.9194693x100km&estadocidade=S%C3%A3o%20Paulo-Cotia&marca1=VOLKSWAGEN&modelo1=GOLF&lkid=1042&page=1'
-driver.get(url)
-time.sleep(5)  # Esperar a página carregar
+**Se precisar, você pode me contatar por :**
 
-# Extrair dados
-carros = driver.find_elements(By.CLASS_NAME, '_Container_70j0p_1')
-for carro in carros:
-    nome = carro.find_element(By.CLASS_NAME, '_web-title-medium_qtpsh_51').text
-    modelo = carro.find_element(By.CLASS_NAME, '_body-regular-small_qtpsh_152').text
-    ano = carro.find_element(By.CLASS_NAME, '_body-regular-small_qtpsh_152').text
-    km = carro.find_elements(By.CLASS_NAME, '_body-regular-small_qtpsh_152')[1].text
-    localizacao = carro.find_element(By.CLASS_NAME, '_body-regular-small_qtpsh_152').text
-    preco = carro.find_element(By.CLASS_NAME, '_body-bold-large_qtpsh_78').text
-    
-    print(f'Nome: {nome}')
-    print(f'Modelo: {modelo}')
-    print(f'Ano: {ano}')
-    print(f'Quilometragem: {km}')
-    print(f'Localização: {localizacao}')
-    print(f'Preço: {preco}')
-    print('-' * 50)
+[](https://camo.githubusercontent.com/e5cfad4cbb1e023463333923b069b81749d94e8ff5722f851c7bb01d65bb0e95/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476d61696c2d4431343833363f7374796c653d666f722d7468652d6261646765266c6f676f3d676d61696c266c6f676f436f6c6f723d7768697465)
 
-# Fechar o navegador
-driver.quit()
+[](https://camo.githubusercontent.com/8c0692475a5bfc1d9e7361074bdb648e567cae7b5b40ffd32adae31180b0d7b6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d3030373742353f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465)
